@@ -14,4 +14,6 @@ print(df)
 
 # # Fill missing age with a default value (e.g., 0)
 df["age"] = df["age"].fillna(0)
+# Fill missing age with mean age
+df["age"] =df["age"].fillna(df["age"].mean())
 print(df)
